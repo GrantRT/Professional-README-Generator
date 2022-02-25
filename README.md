@@ -9,6 +9,7 @@
 5. [Test instructions](#test-instructions)
 6. [License](#license)
 7. [Questions](#questions)
+8. [Video demonstration](#video-demonstration)
 
 ## Description
 
