@@ -113,31 +113,73 @@ const questions = [
     type: 'input',
     name: 'title',
     message: 'Enter the title of the project:',
+    validate: (input) => {
+      if (!input) {
+        return 'A title is required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'description',
     message: 'Enter the description of your project:',
+    validate: (input) => {
+      if (!input) {
+        return 'A description is required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'installation',
     message: 'Enter the installation instructions:',
+    validate: (input) => {
+      if (!input) {
+        return 'Installation instructions are required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'usage',
     message: 'Enter the usage information:',
+    validate: (input) => {
+      if (!input) {
+        return 'Usage information is required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'contributing',
     message: 'Enter the contribution guidelines:',
+    validate: (input) => {
+      if (!input) {
+        return 'Contribution guidelines are required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'test',
     message: 'Test instructions:',
+    validate: (input) => {
+      if (!input) {
+        return 'Test instructions are required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'list',
@@ -149,11 +191,25 @@ const questions = [
     type: 'input',
     name: 'github',
     message: 'Enter your github username:',
+    validate: (input) => {
+      if (!input) {
+        return 'A github username is required';
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'email',
     message: 'Enter your email address:',
+    validate: (input) => {
+      if (!input) {
+        return 'A valid email address is required';
+      } else {
+        return true;
+      }
+    },
   },
 ];
 
